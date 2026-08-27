@@ -373,65 +373,104 @@ function initFaqAccordion() {
 }
 
 // --- 7. FREE AI ANALYSIS LEAD SUBMISSION & MODAL ---
-function handleFormSubmit(event) {
+async function handleFormSubmit(event) {
   event.preventDefault();
   
   const form = document.getElementById('lead-audit-form');
   const submitBtn = document.getElementById('btn-submit-form');
   const btnText = submitBtn.querySelector('.btn-text');
-  const btnSpinner = submitBtn.querySelector('.btn-spinner');
 
   const formData = new FormData(form);
-  const sellerName = formData.get('sellerName') || 'Store Owner';
-  const fbPage = formData.get('fbPage') || 'Your Facebook Page';
-  const bizCategory = formData.get('bizCategory') || 'Fashion & Retail';
-  const monthlyConv = formData.get('monthlyConv') || '1,200';
-  const contactInfo = formData.get('contactInfo') || '';
-  const salesProblem = formData.get('salesProblem') || 'Price & drop-offs';
+  const sellerName = (formData.get('sellerName') || 'Store Owner').trim();
+  const fbPage = (formData.get('fbPage') || 'Your Facebook Page').trim();
+  const bizCategory = (formData.get('bizCategory') || 'Fashion & Retail').trim();
+  const monthlyConv = (formData.get('monthlyConv') || '1,200 chats/mo').trim();
+  const contactInfo = (formData.get('contactInfo') || '').trim();
+  const salesProblem = (formData.get('salesProblem') || 'Price & drop-offs').trim();
 
   // UI loading state
-  if (btnText) btnText.textContent = 'Generating AI Audit...';
+  if (btnText) btnText.textContent = 'Submitting & Generating Audit...';
   submitBtn.disabled = true;
 
-  // Simulate AI scan processing
-  setTimeout(() => {
-    submitBtn.disabled = false;
-    if (btnText) btnText.textContent = 'Get My Free Analysis →';
+  let leadId = 'IC-' + Math.random().toString(36).substring(2, 7).toUpperCase();
 
-    // Store in localStorage for persistence
-    try {
-      const leadEntry = {
-        sellerName,
-        fbPage,
-        bizCategory,
-        monthlyConv,
-        contactInfo,
-        salesProblem,
-        timestamp: new Date().toISOString()
-      };
-      const existing = JSON.parse(localStorage.getItem('inbox_copilot_leads') || '[]');
-      existing.push(leadEntry);
-      localStorage.setItem('inbox_copilot_leads', JSON.stringify(existing));
-    } catch (e) {
-      console.warn('LocalStorage error:', e);
+  const payload = {
+    sellerName,
+    fbPage,
+    bizCategory,
+    monthlyConv,
+    contactInfo,
+    salesProblem,
+    timestamp: new Date().toISOString()
+  };
+
+  try {
+    // 1. Submit to Vercel Serverless Function
+    const response = await fetch('/api/submit-lead', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      if (data && data.leadId) {
+        leadId = data.leadId;
+      }
     }
+  } catch (err) {
+    console.warn('API endpoint unavailable, saving to local offline queue:', err);
+  }
 
-    // Populate modal data
-    const shopTitle = document.getElementById('modal-shop-title');
-    const shopSub = document.getElementById('modal-shop-sub');
-    const detailsEl = document.getElementById('modal-shop-details');
+  // 2. Backup to localStorage
+  try {
+    const existing = JSON.parse(localStorage.getItem('inbox_copilot_leads') || '[]');
+    existing.push({ ...payload, leadId });
+    localStorage.setItem('inbox_copilot_leads', JSON.stringify(existing));
+  } catch (e) {
+    console.warn('LocalStorage error:', e);
+  }
 
-    if (shopTitle) shopTitle.textContent = `Audit Request Received: ${fbPage}`;
-    if (shopSub) shopSub.textContent = `Prepared for ${sellerName} • Category: ${bizCategory} (${monthlyConv})`;
-    if (detailsEl) {
-      detailsEl.textContent = `We have received the inquiry profile for "${fbPage}". Our team is preparing a customized conversation review focused on ${bizCategory} sales bottlenecks. You will receive your personalized action playbook via WhatsApp / Email (${contactInfo || 'provided contact'}).`;
-    }
+  // 3. Reset Button UI
+  submitBtn.disabled = false;
+  if (btnText) btnText.textContent = 'Get My Free Analysis →';
 
-    // Open Modal
-    openModal();
-    showToast(`🎉 Request received for ${sellerName}! Check WhatsApp/Email soon.`);
-    form.reset();
-  }, 1000);
+  // 4. Populate modal data
+  const shopTitle = document.getElementById('modal-shop-title');
+  const shopSub = document.getElementById('modal-shop-sub');
+  const detailsEl = document.getElementById('modal-shop-details');
+  const leadIdEl = document.getElementById('modal-lead-id');
+  const waBtn = document.getElementById('modal-whatsapp-btn');
+
+  if (leadIdEl) leadIdEl.textContent = `ID: #${leadId}`;
+  if (shopTitle) shopTitle.textContent = `Audit Request Logged: ${fbPage}`;
+  if (shopSub) shopSub.textContent = `Prepared for ${sellerName} • Category: ${bizCategory}`;
+  if (detailsEl) {
+    detailsEl.textContent = `We have received the inquiry profile for "${fbPage}". Our team is preparing a customized conversation review focused on ${bizCategory} sales bottlenecks. You will receive your personalized action playbook via WhatsApp / Email (${contactInfo || 'provided contact'}).`;
+  }
+
+  // 5. Setup WhatsApp Instant Contact Link with pre-filled message
+  if (waBtn) {
+    const waText = encodeURIComponent(
+      `Hi InboxCopilot Team! 👋 I just requested a Free AI Conversation Audit on your website.\n\n` +
+      `📌 Request ID: #${leadId}\n` +
+      `👤 Owner Name: ${sellerName}\n` +
+      `🛍️ Shop Page: ${fbPage}\n` +
+      `🏷️ Category: ${bizCategory} (${monthlyConv})\n` +
+      `⚠️ Key Problem: ${salesProblem}\n\n` +
+      `Looking forward to receiving our personalized sales analysis!`
+    );
+    // Opens WhatsApp Web or App directly
+    waBtn.href = `https://api.whatsapp.com/send?text=${waText}`;
+  }
+
+  // 6. Open Modal and notify
+  openModal();
+  showToast(`🎉 Request received for ${sellerName}! Lead ID: #${leadId}`);
+  form.reset();
 }
 
 function openModal() {

@@ -1206,7 +1206,10 @@
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
       <div class="modal-header">
-        <div class="modal-badge-success">✓ Request Received</div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
+          <div class="modal-badge-success">✓ Request Received &amp; Logged</div>
+          <span id="modal-lead-id" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan); background: rgba(56,189,248,0.12); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.25);">ID: #IC-PENDING</span>
+        </div>
         <h3 id="modal-shop-title">Your Free AI Shop Audit Is Being Prepared</h3>
         <p id="modal-shop-sub">We'll review your submitted information and prepare your personalized report.</p>
       </div>
@@ -1239,9 +1242,12 @@
         </div>
       </div>
 
-      <div class="modal-footer">
+      <div class="modal-footer" style="display: flex; flex-direction: column; gap: 10px;">
+        <a id="modal-whatsapp-btn" href="#" target="_blank" rel="noopener" class="btn btn-secondary w-100" style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.4); color: #6ee7b7; font-weight: 700;">
+          <span>💬 Chat on WhatsApp for Priority Audit &rarr;</span>
+        </a>
         <button class="btn btn-primary w-100 btn-glow" onclick="closeModal()">
-          <span>Got It — Keep Me Updated &rarr;</span>
+          <span>Got It — Done &rarr;</span>
         </button>
       </div>
     </div>
