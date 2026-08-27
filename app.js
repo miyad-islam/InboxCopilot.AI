@@ -352,32 +352,19 @@ function handleFormSubmit(event) {
     // Populate modal data
     const shopTitle = document.getElementById('modal-shop-title');
     const shopSub = document.getElementById('modal-shop-sub');
-    const scoreVal = document.getElementById('modal-score');
-    const leakAmount = document.getElementById('modal-leak-amount');
+    const detailsEl = document.getElementById('modal-shop-details');
 
-    if (shopTitle) shopTitle.textContent = `${fbPage} — AI Audit Report`;
-    if (shopSub) shopSub.textContent = `Prepared for ${sellerName} • Category: ${bizCategory}`;
-    
-    // Dynamic score based on volume
-    const scores = ['74%', '79%', '82%', '86%'];
-    const chosenScore = scores[Math.floor(Math.random() * scores.length)];
-    if (scoreVal) scoreVal.textContent = chosenScore;
-
-    if (leakAmount) {
-      if (monthlyConv.includes('5,000')) {
-        leakAmount.textContent = '৳ 145,000 / mo';
-      } else if (monthlyConv.includes('2,000')) {
-        leakAmount.textContent = '৳ 78,500 / mo';
-      } else {
-        leakAmount.textContent = '৳ 38,500 / mo';
-      }
+    if (shopTitle) shopTitle.textContent = `Audit Request Received: ${fbPage}`;
+    if (shopSub) shopSub.textContent = `Prepared for ${sellerName} • Category: ${bizCategory} (${monthlyConv})`;
+    if (detailsEl) {
+      detailsEl.textContent = `We have received the inquiry profile for "${fbPage}". Our team is preparing a customized conversation review focused on ${bizCategory} sales bottlenecks. You will receive your personalized action playbook via WhatsApp / Email (${contactInfo || 'provided contact'}).`;
     }
 
     // Open Modal
     openModal();
-    showToast(`🎉 Audit generated for ${sellerName}! Check WhatsApp/Email.`);
+    showToast(`🎉 Request received for ${sellerName}! Check WhatsApp/Email soon.`);
     form.reset();
-  }, 1200);
+  }, 1000);
 }
 
 function openModal() {
