@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InboxCopilot AI — Turn Your Facebook Inbox Into Your AI Sales Copilot</title>
+  <meta name="description" content="AI analyzes customer conversations, identifies high-intent buyers, finds lost sales opportunities, and tells you what to do next. Built for F-Commerce and online sellers." />
+  <meta name="keywords" content="Facebook inbox AI, F-commerce Bangladesh, AI sales copilot, customer conversation analytics, messenger sales AI, e-commerce conversion" />
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="InboxCopilot AI — Turn Your Facebook Inbox Into Your AI Sales Copilot" />
+  <meta property="og:description" content="Identify high-intent buyers, find lost sales opportunities, and boost conversational closing rates with AI." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=80" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-middle"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span class="badge-pill">🚀 Limited Early Access</span>
+      <span class="announcement-text">Founding Member batch open — First 50 sellers get free AI conversation audit & lifetime VIP perks!</span>
+      <a href="#analysis-form" class="announcement-link">Claim Spot &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="InboxCopilot AI Home">
+        <div class="logo-icon-wrapper">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1"/>
+                <stop offset="0.5" stop-color="#38BDF8"/>
+                <stop offset="1" stop-color="#10B981"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">InboxCopilot<span class="brand-highlight">.AI</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#demo" class="nav-link">See AI In Action</a>
+        <a href="#problems" class="nav-link">Why Copilot</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#dashboard" class="nav-link">Dashboard</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#analysis-form" class="btn btn-primary btn-sm btn-glow">
+          <span>Analyze My Shop Free</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="sparkle-icon">✨</span>
+          <span>Built for Facebook Sellers • Supports Bangla, Banglish & English</span>
+          <span class="hero-badge-tag">v1.0 Beta</span>
+        </div>
+
+        <h1 class="hero-title">
+          Turn Your Facebook Inbox Into Your <span class="gradient-text">AI Sales Copilot</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          AI analyzes customer conversations, identifies high-intent buyers, finds lost sales opportunities, and tells you exactly what to do next to close the deal.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#analysis-form" class="btn btn-primary btn-lg btn-glow">
+            <span class="btn-icon">⚡</span>
+            <span>Analyze My Shop Free</span>
+          </a>
+          <a href="#how-it-works" class="btn btn-secondary btn-lg">
+            <span>See How It Works</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-trust-row">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>No technical knowledge needed</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>100% Secure & Anonymized</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Connects in 60 seconds</span>
+          </div>
+        </div>
+
+        <!-- HERO INTERACTIVE PREVIEW CARD -->
+        <div class="hero-preview-wrapper">
+          <div class="hero-glass-card">
+            <!-- Card Header -->
+            <div class="preview-card-header">
+              <div class="window-controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="preview-status">
+                <span class="pulse-indicator"></span>
+                <span class="status-text">AI Copilot Live Scanner • <strong>FashionHub BD</strong> Inbox</span>
+              </div>
+              <div class="preview-badge">⚡ Real-time Intent Engine</div>
+            </div>
+
+            <!-- Hero Card Body (Interactive Mini Demo) -->
+            <div class="hero-preview-grid">
+              <div class="preview-chat-col">
+                <div class="chat-header">
+                  <div class="chat-user">
+                    <div class="avatar-ring">
+                      <span class="avatar-text">SM</span>
+                    </div>
+                    <div>
+                      <div class="user-name">Sadia Mahmud <span class="badge-messenger">Messenger</span></div>
+                      <div class="user-status">Active now • Product: Emerald Velvet Saree</div>
+                    </div>
+                  </div>
+                  <span class="chat-time">2m ago</span>
+                </div>
+
+                <div class="chat-bubbles">
+                  <div class="chat-bubble incoming">
+                    <p>Apur ei saree tar price koto? Dhakar baire delivery charge koto lagbe? Ready stock ache?</p>
+                    <span class="bubble-time">10:14 PM</span>
+                  </div>
+                  
+                  <div class="ai-detected-pill">
+                    <span class="ai-pill-icon">🔥</span>
+                    <span>High Purchase Intent (94%) — Ready to buy, asking delivery details</span>
+                  </div>
+
+                  <div class="chat-bubble outgoing">
+                    <p>Price ৳3,450 ma'am! Dhakar baire delivery ৳130. Stock limited ache, ajke order korle 2 dine paben.</p>
+                    <span class="bubble-time">10:16 PM</span>
+                  </div>
+
+                  <div class="chat-bubble incoming">
+                    <p>Ektu beshi mone hocche apu... discount hobe na? 😕</p>
+                    <span class="bubble-time">10:18 PM</span>
+                  </div>
+
+                  <div class="ai-detected-pill warning">
+                    <span class="ai-pill-icon">⚠️</span>
+                    <span>Price Objection Detected — Probability of dropping: 68%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI Copilot Live Recommendation Side -->
+              <div class="preview-copilot-col">
+                <div class="copilot-card">
+                  <div class="copilot-card-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2">
+                      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                    <span>AI Copilot Recommendation</span>
+                  </div>
+                  
+                  <div class="intent-meter-box">
+                    <div class="meter-labels">
+                      <span>Conversion Urgency</span>
+                      <span class="meter-val high">High (Immediate Action)</span>
+                    </div>
+                    <div class="meter-bar">
+                      <div class="meter-fill" style="width: 82%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="action-box">
+                    <div class="action-badge">💡 Recommended Reply Script</div>
+                    <p class="action-text">"Ma'am ajkei order confirm korle Free Delivery voucher deya jabe! ৳130 save hobe. Apnar address & phone number din please."</p>
+                    <div class="action-footer">
+                      <span class="est-recovery">💰 Estimated Saved Sale: <strong>৳3,450</strong></span>
+                      <button class="btn btn-tiny btn-glow" onclick="simulateCopyReply(this)">Copy Script</button>
+                    </div>
+                  </div>
+
+                  <div class="mini-metrics-row">
+                    <div class="mini-metric">
+                      <span class="m-val green">৳18,450</span>
+                      <span class="m-lbl">Recoverable Today</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="m-val indigo">37 Hot</span>
+                      <span class="m-lbl">Leads Waiting</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="problems-section" id="problems">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-danger">The Silent Revenue Leak</div>
+          <h2 class="section-title">How many sales are you losing in your inbox?</h2>
+          <p class="section-subtitle">
+            Most Facebook page sellers spend all their ad budget driving traffic, but lose 60%+ of high-intent buyers in unanswered or poorly handled chat threads.
+          </p>
+        </div>
+
+        <div class="problem-cards-grid">
+          <div class="problem-card">
+            <div class="problem-icon-wrapper danger">
+              <span class="problem-emoji">❌</span>
+            </div>
+            <h3 class="problem-title">Customers ask questions and disappear</h3>
+            <p class="problem-desc">
+              A buyer asks for price or size, your page replies hours later, and the customer already bought from another page.
+            </p>
+            <div class="problem-stat">~42% drops due to delayed follow-ups</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrapper warning">
+              <span class="problem-emoji">❌</span>
+            </div>
+            <h3 class="problem-title">You don't know which chats are high-intent</h3>
+            <p class="problem-desc">
+              Window shoppers and ready-to-pay buyers look identical. Your agents waste precious time chatting with low-intent queries.
+            </p>
+            <div class="problem-stat">Zero lead scoring in standard Messenger</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrapper info">
+              <span class="problem-emoji">❌</span>
+            </div>
+            <h3 class="problem-title">Sellers spend hours replying manually</h3>
+            <p class="problem-desc">
+              Typing repetitive delivery charges, size guides, and discount requests exhausts your staff and leads to human errors.
+            </p>
+            <div class="problem-stat">3.5+ hours spent daily per agent</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrapper purple">
+              <span class="problem-emoji">❌</span>
+            </div>
+            <h3 class="problem-title">Impossible to know why customers didn't buy</h3>
+            <p class="problem-desc">
+              Was it high delivery charge? Lack of COD in their area? Too expensive? You have zero structured analytics on lost deals.
+            </p>
+            <div class="problem-stat">Blind to real customer objections</div>
+          </div>
+        </div>
+
+        <!-- Problem Impact Banner -->
+        <div class="impact-banner">
+          <div class="impact-glow"></div>
+          <div class="impact-content">
+            <div class="impact-left">
+              <span class="impact-tag">💡 The Core Solution</span>
+              <h3 class="impact-heading">Your inbox contains valuable sales data. We help you understand it.</h3>
+              <p class="impact-text">Stop treating your Messenger as just a chat box. Turn it into a structured, revenue-generating sales funnel with AI Copilot.</p>
+            </div>
+            <div class="impact-right">
+              <a href="#calculator" class="btn btn-primary btn-glow">Calculate My Lost Sales &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE LOST REVENUE CALCULATOR -->
+        <div class="calculator-box" id="calculator">
+          <div class="calculator-header">
+            <h3>🧮 Interactive Inbox Revenue Leakage Estimator</h3>
+            <p>Slide your monthly conversation volume to estimate how much revenue your page is leaving on the table.</p>
+          </div>
+
+          <div class="calculator-grid">
+            <div class="calculator-controls">
+              <div class="calc-control-group">
+                <div class="calc-label-row">
+                  <label for="conv-slider">Monthly Customer Conversations:</label>
+                  <span class="calc-highlight" id="conv-count-val">1,200 chats</span>
+                </div>
+                <input type="range" id="conv-slider" min="200" max="8000" step="100" value="1200" class="custom-slider" />
+                <div class="slider-markers">
+                  <span>200</span>
+                  <span>2,000</span>
+                  <span>5,000</span>
+                  <span>8,000+</span>
+                </div>
+              </div>
+
+              <div class="calc-control-group">
+                <div class="calc-label-row">
+                  <label for="aov-slider">Average Order Value (BDT ৳):</label>
+                  <span class="calc-highlight" id="aov-val">৳ 1,650</span>
+                </div>
+                <input type="range" id="aov-slider" min="500" max="6000" step="50" value="1650" class="custom-slider" />
+              </div>
+            </div>
+
+            <div class="calculator-results">
+              <div class="result-card leak">
+                <span class="result-label">Estimated Monthly Lost Sales</span>
+                <div class="result-amount danger" id="lost-revenue-val">৳ 79,200</div>
+                <span class="result-sub" id="lost-orders-val">~48 High-Intent Buyers dropped</span>
+              </div>
+              <div class="result-card recover">
+                <span class="result-label">Recoverable With AI Copilot</span>
+                <div class="result-amount success" id="recoverable-revenue-val">৳ 39,600+</div>
+                <span class="result-sub">Recover 50% with timely AI action scripts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEE AI IN ACTION (LIVE INTERACTIVE DEMO) ⭐ -->
+    <section class="demo-section" id="demo">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-primary">⭐ See AI in Action</div>
+          <h2 class="section-title">Watch AI Decode Real Customer Intent In Seconds</h2>
+          <p class="section-subtitle">
+            Experience how our intelligent Banglish NLP engine reads raw customer messages, identifies intent level, tags objections, and writes high-converting response strategies.
+          </p>
+        </div>
+
+        <!-- Scenario Switcher Tabs -->
+        <div class="demo-tabs-wrapper">
+          <div class="demo-tabs" role="tablist">
+            <button class="demo-tab active" data-scenario="fashion" role="tab" aria-selected="true">
+              <span class="tab-icon">👗</span>
+              <span>Fashion & Saree Shop</span>
+            </button>
+            <button class="demo-tab" data-scenario="gadgets" role="tab" aria-selected="false">
+              <span class="tab-icon">🎧</span>
+              <span>Gadgets & Electronics</span>
+            </button>
+            <button class="demo-tab" data-scenario="cosmetics" role="tab" aria-selected="false">
+              <span class="tab-icon">💄</span>
+              <span>Skincare & Cosmetics</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Demo Container -->
+        <div class="demo-console-card">
+          <div class="demo-topbar">
+            <div class="demo-shop-info">
+              <span class="shop-badge" id="demo-shop-badge">👗 Monalisa Fashion BD</span>
+              <span class="scan-status"><span class="pulse-green"></span> Live Stream Active</span>
+            </div>
+            <div class="demo-controls">
+              <button class="btn btn-secondary btn-tiny" id="btn-replay-demo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                <span>Replay Analysis</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="demo-layout-grid">
+            <!-- Left: Simulated Chat Thread -->
+            <div class="demo-chat-pane">
+              <div class="chat-pane-header">
+                <span class="pane-title">Customer Messenger Thread</span>
+                <span class="language-tag">🇧🇩 Bangla / Banglish Detected</span>
+              </div>
+
+              <div class="demo-messages-stream" id="demo-messages-stream">
+                <!-- Dynamically filled via JS -->
+              </div>
+            </div>
+
+            <!-- Right: Real-time AI Intelligence Panel -->
+            <div class="demo-insights-pane">
+              <div class="insights-pane-header">
+                <div class="pane-title-group">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span class="pane-title">AI Real-time Insights</span>
+                </div>
+                <span class="badge-ai-model">AGY-SalesNLP v2.4</span>
+              </div>
+
+              <!-- Live Stat Counters -->
+              <div class="insights-stats-grid">
+                <div class="stat-box">
+                  <div class="stat-icon-text">🔥 High Purchase Intent</div>
+                  <div class="stat-number green" id="stat-high-intent">42</div>
+                  <div class="stat-change">+8 in last hour</div>
+                </div>
+
+                <div class="stat-box">
+                  <div class="stat-icon-text">💔 Lost Opportunities</div>
+                  <div class="stat-number red" id="stat-lost-opps">11</div>
+                  <div class="stat-change">Requires re-engagement</div>
+                </div>
+
+                <div class="stat-box">
+                  <div class="stat-icon-text">⚠️ Price Objections</div>
+                  <div class="stat-number amber" id="stat-price-obj">6</div>
+                  <div class="stat-change">Offer bundle or coupon</div>
+                </div>
+
+                <div class="stat-box">
+                  <div class="stat-icon-text">🚚 Delivery Objections</div>
+                  <div class="stat-number purple" id="stat-delivery-obj">3</div>
+                  <div class="stat-change">Dhaka outside logistics</div>
+                </div>
+              </div>
+
+              <!-- Real-time Generated AI Next Step -->
+              <div class="ai-action-card" id="ai-action-card">
+                <div class="action-card-top">
+                  <span class="action-type-badge">🤖 Copilot Recommended Move</span>
+                  <span class="confidence-score">96% Match</span>
+                </div>
+                <p class="action-message" id="action-recommended-text">
+                  "Send follow-up with free delivery coupon within 15 minutes before the buyer leaves Messenger."
+                </p>
+                <div class="action-btn-row">
+                  <button class="btn btn-primary btn-sm w-100" onclick="simulatePushResponse(this)">
+                    <span>⚡ One-Click Push to Messenger</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-primary">Simple 3-Step Setup</div>
+          <h2 class="section-title">How InboxCopilot Works</h2>
+          <p class="section-subtitle">
+            No complex coding, no complicated software installations. Connect your Facebook Page in 60 seconds and let AI do the heavy lifting.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number-tag">01</div>
+            <div class="step-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Connect Your Page</h3>
+            <p class="step-desc">
+              Connect your Facebook business inbox with one click through official Meta APIs. Safe, secure, and permission-controlled.
+            </p>
+            <ul class="step-bullets">
+              <li>✓ 60-second instant authorization</li>
+              <li>✓ Multi-page management support</li>
+              <li>✓ No password sharing needed</li>
+            </ul>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card featured">
+            <div class="step-number-tag">02</div>
+            <div class="step-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="step-title">AI Analyzes Everything</h3>
+            <p class="step-desc">
+              AI parses incoming chats, understands purchase intent, detects objections, and extracts product questions in Bangla and Banglish.
+            </p>
+            <ul class="step-bullets">
+              <li>✓ Banglish & local slang recognition</li>
+              <li>✓ Real-time intent classification</li>
+              <li>✓ Automatic customer segmentation</li>
+            </ul>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number-tag">03</div>
+            <div class="step-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Get Actionable Insights</h3>
+            <p class="step-desc">
+              See high-intent hot leads ready to checkout, discover why sales were lost, and use tailored closing scripts to recover orders.
+            </p>
+            <ul class="step-bullets">
+              <li>✓ Hot lead priority alert queue</li>
+              <li>✓ Objection recovery playbooks</li>
+              <li>✓ Measurable revenue growth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION (6 PILLARS) -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-primary">Comprehensive Features</div>
+          <h2 class="section-title">Built Specially For Conversational Commerce</h2>
+          <p class="section-subtitle">
+            Every feature is engineered to solve the exact problems faced by Facebook page sellers, Instagram shops, and WhatsApp merchants.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-box">
+            <div class="feature-icon-circle fire">🔥</div>
+            <h3 class="feature-title">Hot Lead Detection</h3>
+            <p class="feature-desc">
+              Instantly identify customers most likely to buy right now so your sales team never keeps hot buyers waiting in the queue.
+            </p>
+            <div class="feature-pill-tag">Lead Scoring • Real-time</div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-box">
+            <div class="feature-icon-circle brain">🧠</div>
+            <h3 class="feature-title">Conversation Intelligence</h3>
+            <p class="feature-desc">
+              Understand what customers actually want. AI extracts sizing, color preferences, budget, and location automatically.
+            </p>
+            <div class="feature-pill-tag">Banglish NLP • Context Aware</div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-box">
+            <div class="feature-icon-circle lost">💔</div>
+            <h3 class="feature-title">Lost Sales Detection</h3>
+            <p class="feature-desc">
+              Find high-intent conversations that ended abruptly without an order, allowing you to trigger targeted recovery campaigns.
+            </p>
+            <div class="feature-pill-tag">Drop-off Tracking • Win-back</div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-box">
+            <div class="feature-icon-circle objection">💰</div>
+            <h3 class="feature-title">Purchase Objection Analysis</h3>
+            <p class="feature-desc">
+              Breakdown exactly why customers hesitate: price resistance, delivery charges, COD unavailability, or product fit.
+            </p>
+            <div class="feature-pill-tag">Root Cause Analytics</div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-box">
+            <div class="feature-icon-circle chart">📊</div>
+            <h3 class="feature-title">Sales Trend Insights</h3>
+            <p class="feature-desc">
+              See patterns across hundreds of conversations. Spot trending products, peak buying hours, and customer demand shifts.
+            </p>
+            <div class="feature-pill-tag">Visual Dashboards • Exports</div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-box">
+            <div class="feature-icon-circle robot">🤖</div>
+            <h3 class="feature-title">AI Action Recommendations</h3>
+            <p class="feature-desc">
+              Get battle-tested closing suggestions and instant response templates proven to overcome objections and close deals.
+            </p>
+            <div class="feature-pill-tag">1-Click Closing Scripts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXAMPLE DASHBOARD SECTION ⭐ -->
+    <section class="dashboard-section" id="dashboard">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-primary">⭐ Executive Dashboard Preview</div>
+          <h2 class="section-title">Your Entire Inbox Health In One Sleek View</h2>
+          <p class="section-subtitle">
+            Replace messy Messenger chat lists with a clean, high-level operational command center designed for business owners.
+          </p>
+        </div>
+
+        <div class="dashboard-mock-wrapper">
+          <!-- Top Dashboard Navigation -->
+          <div class="dash-mock-topbar">
+            <div class="dash-brand">
+              <span class="dash-dot"></span>
+              <span class="dash-title">InboxCopilot Analytics</span>
+              <span class="dash-period">Live Overview • Today, 27 Aug</span>
+            </div>
+            <div class="dash-filters">
+              <button class="dash-btn active">Today</button>
+              <button class="dash-btn">This Week</button>
+              <button class="dash-btn">This Month</button>
+              <span class="dash-refresh">⟳ Auto-syncing</span>
+            </div>
+          </div>
+
+          <!-- Key Metrics Grid -->
+          <div class="dash-metrics-grid">
+            <div class="dash-metric-card">
+              <span class="dm-label">Today's Conversations</span>
+              <div class="dm-value">248</div>
+              <span class="dm-badge green">↑ +14.2% vs yesterday</span>
+            </div>
+
+            <div class="dash-metric-card highlight-glow">
+              <span class="dm-label">🔥 High Intent Leads</span>
+              <div class="dm-value text-glow">37</div>
+              <span class="dm-badge green">15 ready for immediate order</span>
+            </div>
+
+            <div class="dash-metric-card">
+              <span class="dm-label">🛒 Orders Closed</span>
+              <div class="dm-value">19</div>
+              <span class="dm-badge blue">৳31,200 confirmed</span>
+            </div>
+
+            <div class="dash-metric-card">
+              <span class="dm-label">💔 Lost Opportunities</span>
+              <div class="dm-value text-red">12</div>
+              <span class="dm-badge red">Dropped at checkout</span>
+            </div>
+
+            <div class="dash-metric-card highlight-gold">
+              <span class="dm-label">💰 Potential Recoverable</span>
+              <div class="dm-value text-gold">৳18,450</div>
+              <span class="dm-badge gold">6 high probability win-backs</span>
+            </div>
+          </div>
+
+          <!-- Dashboard Lower Section: Breakdown & Priority Queue -->
+          <div class="dash-subgrid">
+            <!-- Why Customers Didn't Buy -->
+            <div class="dash-panel">
+              <div class="panel-header">
+                <h4>Why Customers Didn't Buy Today</h4>
+                <span class="panel-subtitle">12 Lost Conversations Analyzed</span>
+              </div>
+
+              <div class="reasons-table-wrapper">
+                <table class="reasons-table">
+                  <thead>
+                    <tr>
+                      <th>Objection Reason</th>
+                      <th>Customers</th>
+                      <th>Percentage</th>
+                      <th>Recovery Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="reason-tag price">💰 Price Objection</span></td>
+                      <td class="num-cell"><strong>6</strong></td>
+                      <td>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar-fill price" style="width: 50%;"></div>
+                          <span>50%</span>
+                        </div>
+                      </td>
+                      <td><span class="action-pill">Offer 5% Voucher</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="reason-tag delivery">🚚 Delivery Charge</span></td>
+                      <td class="num-cell"><strong>3</strong></td>
+                      <td>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar-fill delivery" style="width: 25%;"></div>
+                          <span>25%</span>
+                        </div>
+                      </td>
+                      <td><span class="action-pill">Free Shipping Prompt</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="reason-tag size">📏 Size Unavailable</span></td>
+                      <td class="num-cell"><strong>2</strong></td>
+                      <td>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar-fill size" style="width: 17%;"></div>
+                          <span>17%</span>
+                        </div>
+                      </td>
+                      <td><span class="action-pill">Notify Pre-order</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="reason-tag ghost">⏳ No Response / Ghosted</span></td>
+                      <td class="num-cell"><strong>1</strong></td>
+                      <td>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar-fill ghost" style="width: 8%;"></div>
+                          <span>8%</span>
+                        </div>
+                      </td>
+                      <td><span class="action-pill">Gentle 24h Ping</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Hot Lead Queue -->
+            <div class="dash-panel">
+              <div class="panel-header">
+                <h4>🔥 Immediate Hot Leads Queue</h4>
+                <span class="badge-alert">3 Urgent Actions</span>
+              </div>
+
+              <div class="hot-lead-list">
+                <div class="hot-lead-item">
+                  <div class="hl-info">
+                    <div class="hl-name">Tanvir Ahmed • <span class="hl-product">Wireless ANC Earbuds</span></div>
+                    <div class="hl-msg">"Delivery charge advance dite hobe naki COD?"</div>
+                  </div>
+                  <button class="btn btn-tiny btn-glow" onclick="alert('Copilot response sent: COD available all over Bangladesh with advance courier charge of ৳100!')">Quick Reply</button>
+                </div>
+
+                <div class="hot-lead-item">
+                  <div class="hl-info">
+                    <div class="hl-name">Nusrat Jahan • <span class="hl-product">Silk Organza Saree</span></div>
+                    <div class="hl-msg">"Delivery within Friday possible?"</div>
+                  </div>
+                  <button class="btn btn-tiny btn-glow" onclick="alert('Copilot response sent: Yes Maam! Express 24h delivery confirmed!')">Quick Reply</button>
+                </div>
+
+                <div class="hot-lead-item">
+                  <div class="hl-info">
+                    <div class="hl-name">Rifat Hossain • <span class="hl-product">Matte Clay Wax</span></div>
+                    <div class="hl-msg">"2 ta nile kono offer pabo?"</div>
+                  </div>
+                  <button class="btn btn-tiny btn-glow" onclick="alert('Copilot response sent: Combo discount 10% applied automatically!')">Quick Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT IS FOR SECTION -->
+    <section class="audience-section" id="audience">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-primary">Target Industries</div>
+          <h2 class="section-title">Built For Sellers Who Sell Through Conversations</h2>
+          <p class="section-subtitle">
+            If your sales happen inside Facebook Messenger, Instagram DMs, or WhatsApp, InboxCopilot is built specifically for your workflow.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <span class="aud-icon">👗</span>
+            <h3>Clothing & Fashion Brands</h3>
+            <p>Handle sizing questions, color variants, custom tailoring inquiries, and Eid/Puja collection rushes effortlessly.</p>
+          </div>
+
+          <div class="audience-card">
+            <span class="aud-icon">💄</span>
+            <h3>Cosmetics & Skincare</h3>
+            <p>Recommend products based on skin type concerns, expiry questions, and authentic product assurance.</p>
+          </div>
+
+          <div class="audience-card">
+            <span class="aud-icon">📱</span>
+            <h3>Electronics & Gadgets</h3>
+            <p>Answer warranty details, COD verification, compatibility questions, and rapid tech specs.</p>
+          </div>
+
+          <div class="audience-card">
+            <span class="aud-icon">💍</span>
+            <h3>Jewellery & Accessories</h3>
+            <p>Address gold plating durability, customization options, and urgent gift delivery deadlines.</p>
+          </div>
+
+          <div class="audience-card">
+            <span class="aud-icon">🍰</span>
+            <h3>Food, Bakery & Sweets</h3>
+            <p>Coordinate customized cake orders, delivery time slots, hygiene standards, and event catering.</p>
+          </div>
+
+          <div class="audience-card">
+            <span class="aud-icon">📦</span>
+            <h3>Small E-commerce Brands</h3>
+            <p>D2C businesses scaling from 500 to 10,000 monthly customer inquiries without tripling support team headcount.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE AI ANALYSIS LEAD GENERATION ENGINE (CTA FORM) ⭐⭐⭐ -->
+    <section class="form-section" id="analysis-form">
+      <div class="container form-container">
+        <div class="form-wrapper">
+          <div class="form-left-copy">
+            <div class="section-badge badge-primary">⭐⭐⭐ Free Audit</div>
+            <h2 class="form-title">Want to know how many sales you're losing?</h2>
+            <p class="form-subtitle">
+              Get a free AI analysis of your customer conversations. See your exact lead score, drop-off hotspots, and missed revenue opportunities.
+            </p>
+
+            <div class="form-perks-list">
+              <div class="perk-item">
+                <div class="perk-icon">📊</div>
+                <div>
+                  <strong>Detailed Leakage Report:</strong> Find out how many buyers ghosted your page and why.
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">⚡</div>
+                <div>
+                  <strong>Tailored Response Playbook:</strong> High-converting response templates for your niche.
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">🎁</div>
+                <div>
+                  <strong>VIP Early Access:</strong> Special founding-user lifetime rate when full SaaS launches.
+                </div>
+              </div>
+            </div>
+
+            <div class="trust-box-secure">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>We never store or share private customer identity data. 100% anonymized analysis.</span>
+            </div>
+          </div>
+
+          <!-- Lead Generation Form -->
+          <div class="form-right-card">
+            <div class="card-glow"></div>
+            <div class="form-inner">
+              <h3 class="form-card-title">Request Your Free Shop Analysis</h3>
+              <p class="form-card-desc">Fill in details below to receive your personalized audit report.</p>
+
+              <form id="lead-audit-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                  <label for="seller-name">Your Full Name / Owner Name <span class="req">*</span></label>
+                  <input type="text" id="seller-name" name="sellerName" placeholder="e.g. Tanvir Rahman" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="fb-page">Facebook Page Name or Link <span class="req">*</span></label>
+                  <input type="text" id="fb-page" name="fbPage" placeholder="e.g. facebook.com/monalisafashionbd" required />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group half">
+                    <label for="biz-category">Business Category <span class="req">*</span></label>
+                    <select id="biz-category" name="bizCategory" required>
+                      <option value="" disabled selected>Select category...</option>
+                      <option value="Clothing & Fashion">Clothing & Fashion</option>
+                      <option value="Cosmetics & Skincare">Cosmetics & Skincare</option>
+                      <option value="Electronics & Gadgets">Electronics & Gadgets</option>
+                      <option value="Jewellery & Accessories">Jewellery & Accessories</option>
+                      <option value="Food & Bakery">Food & Bakery</option>
+                      <option value="General E-Commerce">General E-Commerce</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group half">
+                    <label for="monthly-conv">Monthly Conversations <span class="req">*</span></label>
+                    <select id="monthly-conv" name="monthlyConv" required>
+                      <option value="" disabled selected>Select volume...</option>
+                      <option value="Under 500 chats">Under 500 chats / mo</option>
+                      <option value="500 - 2,000 chats">500 - 2,000 chats / mo</option>
+                      <option value="2,000 - 5,000 chats">2,000 - 5,000 chats / mo</option>
+                      <option value="5,000+ chats">5,000+ chats / mo</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-info">Email or WhatsApp Number <span class="req">*</span></label>
+                  <input type="text" id="contact-info" name="contactInfo" placeholder="e.g. tanvir@gmail.com or 017XXXXXXXX" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="sales-problem">Biggest Sales Challenge in Messenger</label>
+                  <select id="sales-problem" name="salesProblem">
+                    <option value="Customers ask price and disappear">Customers ask price and disappear</option>
+                    <option value="Delayed replies cause lost buyers">Delayed replies cause lost buyers</option>
+                    <option value="Customers complain about delivery charges">Customers complain about delivery charges</option>
+                    <option value="Can't manage high chat volume during sales">Can't manage high chat volume during sales</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-glow w-100" id="btn-submit-form">
+                  <span class="btn-text">Get My Free Analysis &rarr;</span>
+                  <span class="btn-spinner" style="display: none;"></span>
+                </button>
+
+                <div class="form-guarantee">
+                  <span>🔒 Instant confirmation • No spam guarantee</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EARLY ACCESS / FOUNDING USERS SECTION -->
+    <section class="early-access-section" id="early-access">
+      <div class="container">
+        <div class="early-access-card">
+          <div class="ea-glow"></div>
+          <div class="ea-content">
+            <span class="ea-badge">🚀 Founding Users — Limited Early Access</span>
+            <h2 class="ea-title">Join our early access program and get special founding-user pricing</h2>
+            <p class="ea-desc">
+              We are currently onboarding an exclusive cohort of 50 active Facebook sellers. Founding members receive free 1-on-1 AI setup, priority feature requests, and guaranteed 50% discount on future subscription tiers.
+            </p>
+            
+            <div class="ea-slots-bar">
+              <div class="slots-header">
+                <span>Cohort 1 Availability:</span>
+                <span class="slots-count"><strong>34</strong> of 50 spots claimed</span>
+              </div>
+              <div class="slots-track">
+                <div class="slots-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+
+            <div class="ea-btn-wrap">
+              <a href="#analysis-form" class="btn btn-primary btn-lg btn-glow">Join Early Access Program &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (ACCORDION) -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <div class="section-badge badge-primary">Got Questions?</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about InboxCopilot AI and how it transforms your inbox.</p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span>Is this a chatbot?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Not exactly.</strong> While traditional chatbots send rigid, robotic automated messages that frustrate buyers, InboxCopilot is an <em>AI Sales Copilot & Intelligence Engine</em>. It works alongside your human sales team: analyzing conversations in real time, detecting high-intent buyers, identifying why customers hesitate, and recommending the perfect closing scripts.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does it work with Bangla and Banglish conversations?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Yes, absolutely!</strong> That is one of our primary core advantages. Our proprietary NLP models are specially trained on local conversational nuances, phonetic Banglish (e.g., <em>"apu price koto? Dhakar baire delivery charge koto?"</em>), mixed dialects, and common e-commerce abbreviations used by Bangladeshi shoppers.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need any technical knowledge or developers?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>No technical knowledge is required.</strong> You can connect your Facebook page with just one click through standard Meta authorization. If you can use Facebook Page Manager or Business Suite, you can use InboxCopilot.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I try it for free?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Yes.</strong> Early users who submit our Free AI Analysis form get a complimentary conversation intelligence audit of their Facebook page with zero obligations.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>When will the full SaaS platform launch?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We are currently onboarding early access users in weekly batches to fine-tune store-specific models. Joining the early access list guarantees your spot in the first general rollout.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How is customer privacy and business data protected?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Security is our top priority. We use end-to-end encrypted API connections. All personal customer identifiers (phone numbers, full names, addresses) can be automatically anonymized before analysis. We never sell or share your proprietary business data with third parties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section" id="final-cta">
+      <div class="container">
+        <div class="final-cta-box">
+          <div class="cta-mesh-bg"></div>
+          <div class="cta-content text-center">
+            <div class="hero-badge m-auto">
+              <span>🔥 Start Recovering Lost Sales Today</span>
+            </div>
+            <h2 class="final-cta-title">
+              Your next customer might already be sitting in your inbox.
+            </h2>
+            <p class="final-cta-subtitle">
+              Let AI find them before they buy from your competitor. Claim your free shop analysis in 60 seconds.
+            </p>
+            <div class="final-cta-btns">
+              <a href="#analysis-form" class="btn btn-primary btn-xl btn-glow">
+                <span>Get Free AI Analysis &rarr;</span>
+              </a>
+            </div>
+            <div class="final-cta-trust">
+              <span>⚡ Free Setup</span> • <span>🔒 100% Privacy Protected</span> • <span>🇧🇩 Built for F-Commerce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo">
+            <div class="logo-icon-wrapper sm">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad2)" stroke-width="2"/>
+                <path d="M2 17L12 22L22 17" stroke="url(#logo-grad2)" stroke-width="2"/>
+                <path d="M2 12L12 17L22 12" stroke="url(#logo-grad2)" stroke-width="2"/>
+                <defs>
+                  <linearGradient id="logo-grad2" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6366F1"/>
+                    <stop offset="1" stop-color="#38BDF8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="brand-name">InboxCopilot<span class="brand-highlight">.AI</span></span>
+          </a>
+          <p class="footer-tagline">
+            The AI sales intelligence & conversation copilot built for Facebook, Instagram, and WhatsApp sellers.
+          </p>
+          <div class="footer-status-pill">
+            <span class="pulse-green"></span>
+            <span>All AI Analysis Systems Operational</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#demo">Live AI Demo</a></li>
+            <li><a href="#problems">Why Copilot</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#dashboard">Dashboard Preview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Target Sellers</h4>
+          <ul>
+            <li><a href="#audience">Fashion & Clothing</a></li>
+            <li><a href="#audience">Cosmetics & Beauty</a></li>
+            <li><a href="#audience">Gadgets & Electronics</a></li>
+            <li><a href="#audience">Jewellery Stores</a></li>
+            <li><a href="#audience">Food & Bakery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Early Access</h4>
+          <ul>
+            <li><a href="#analysis-form">Free Analysis Form</a></li>
+            <li><a href="#early-access">Founding Member Perks</a></li>
+            <li><a href="#calculator">Lost Sales Calculator</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 InboxCopilot AI. All rights reserved. Crafted for conversational commerce.</p>
+        <div class="footer-legal">
+          <a href="#" onclick="alert('Privacy Policy: All customer conversation data is encrypted, anonymized and protected under enterprise-grade data security protocols.')">Privacy Policy</a>
+          <a href="#" onclick="alert('Terms: Early access program is subject to Meta platform terms and acceptable use guidelines.')">Terms of Service</a>
+          <a href="#analysis-form">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: SIMULATED INSTANT AUDIT REPORT MODAL (Triggered on Free Analysis Form Submit) -->
+  <div class="modal-overlay" id="audit-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge-success">✓ Analysis Request Received</div>
+        <h3 id="modal-shop-title">AI Shop Audit Report Preview</h3>
+        <p id="modal-shop-sub">Generated for your Facebook page.</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="audit-score-row">
+          <div class="audit-score-circle">
+            <span class="score-number" id="modal-score">78%</span>
+            <span class="score-lbl">Health Score</span>
+          </div>
+          <div class="audit-summary-box">
+            <h4>Estimated Recoverable Revenue: <span class="text-gold" id="modal-leak-amount">৳38,500 / month</span></h4>
+            <p>Our initial scan predicts you can recover approximately <strong>22-35 lost customer chats</strong> per month by implementing our AI objection handling scripts.</p>
+          </div>
+        </div>
+
+        <div class="audit-insights-list">
+          <div class="audit-item">
+            <span class="ai-tag high">🔥 High Priority Hot Leads</span>
+            <p>Approximately 35% of your inquiries show direct purchase intent but drop off due to delayed response times.</p>
+          </div>
+          <div class="audit-item">
+            <span class="ai-tag price">💰 Price Friction Alert</span>
+            <p>Banglish price inquiries like <em>"kono discount hobe?"</em> require automatic voucher scripts to close instantly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary w-100 btn-glow" onclick="closeModal()">
+          <span>Check WhatsApp/Email for Full PDF Report</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

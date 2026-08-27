@@ -1,0 +1,338 @@
+অবশ্যই buddy। 👍 যেহেতু **promotion/video অন্য AI দিয়ে করবে**, landing page-এ আমাদের মূল কাজ হবে **visitor → trust → free analysis/early access → lead**।
+
+আমি প্রথম version-টা খুব simple রাখব। এখনই full SaaS website বানানোর দরকার নেই।
+
+## 🚀 Landing Page — যা যা করতে হবে
+
+### 1. Hero Section ⭐
+
+সবচেয়ে গুরুত্বপূর্ণ অংশ।
+
+**Headline:**
+
+> **Turn Your Facebook Inbox Into Your AI Sales Copilot**
+
+**Subheadline:**
+
+> AI analyzes customer conversations, identifies high-intent buyers, finds lost sales opportunities, and tells you what to do next.
+
+Buttons:
+
+**[Analyze My Shop Free]**
+**[See How It Works ↓]**
+
+Hero-তে একটা **fake/interactive dashboard screenshot** থাকবে।
+
+---
+
+### 2. Problem Section
+
+Heading:
+
+> **How many sales are you losing in your inbox?**
+
+৩–৪টা problem:
+
+* ❌ Customers ask questions and disappear
+* ❌ You don't know which conversations were high-intent
+* ❌ Sellers spend hours replying manually
+* ❌ It's difficult to understand why customers didn't buy
+
+শেষে:
+
+> **Your inbox contains valuable sales data. We help you understand it.**
+
+---
+
+### 3. “See AI in Action” ⭐
+
+এটাই landing page-এর **main selling section**।
+
+একটা sample conversation দেখাবে:
+
+```text
+Customer:
+"Price koto? Dhakar baire delivery koto?"
+
+AI Analysis:
+🔥 High Purchase Intent
+
+Customer:
+"Too expensive 😕"
+
+AI Analysis:
+⚠️ Price Objection
+
+Customer:
+"Thik ache pore janabo"
+
+AI Analysis:
+🟡 Follow-up Opportunity
+```
+
+তারপর পাশে:
+
+### AI Insights
+
+> 42 high-intent conversations
+> 11 lost opportunities
+> 6 price objections
+> 3 delivery objections
+
+---
+
+### 4. How It Works
+
+৩টা step:
+
+**01 — Connect**
+
+Connect your Facebook business inbox.
+
+↓
+
+**02 — AI Analyzes**
+
+AI understands customer conversations and purchase intent.
+
+↓
+
+**03 — Get Actionable Insights**
+
+See hot leads, lost sales, objections and recommended actions.
+
+Simple.
+
+---
+
+### 5. Features
+
+প্রথম version-এ 6টা feature যথেষ্ট:
+
+🔥 **Hot Lead Detection**
+Identify customers most likely to buy.
+
+🧠 **Conversation Intelligence**
+Understand what customers actually want.
+
+💔 **Lost Sales Detection**
+Find conversations that ended without an order.
+
+💰 **Purchase Objection Analysis**
+Understand whether price, delivery, availability or something else stopped the sale.
+
+📊 **Sales Insights**
+See patterns across your conversations.
+
+🤖 **AI Recommendations**
+Get suggestions for improving conversion.
+
+---
+
+### 6. Example Dashboard ⭐
+
+একটা premium-looking dashboard mockup।
+
+Cards:
+
+```text
+Today's Conversations       248
+
+🔥 High Intent                37
+
+🛒 Orders                     19
+
+💔 Lost Opportunities         12
+
+💰 Potential Revenue          ৳18,450
+```
+
+তার নিচে:
+
+**Why customers didn't buy**
+
+| Reason           | Customers |
+| ---------------- | --------: |
+| Price            |         6 |
+| Delivery         |         3 |
+| Size unavailable |         2 |
+| No response      |         1 |
+
+এটা visually খুব powerful হবে।
+
+---
+
+### 7. Free AI Analysis CTA ⭐⭐⭐
+
+এটা আমাদের **lead generation engine**।
+
+Heading:
+
+> **Want to know how many sales you're losing?**
+
+Subheading:
+
+> Get a free AI analysis of your customer conversations.
+
+Form:
+
+* Name
+* Facebook Page
+* Business category
+* Approx. monthly conversations
+* Email / WhatsApp
+* Biggest sales problem
+
+Button:
+
+**Get My Free Analysis**
+
+⚠️ প্রথম version-এ customer-এর actual private Messenger data সরাসরি নেওয়ার দরকার নেই। চাইলে sample/anonymized conversations দিয়ে শুরু করতে পারি।
+
+---
+
+### 8. Who Is It For?
+
+এই SaaS কার জন্য:
+
+✅ Facebook-based online sellers
+✅ Clothing stores
+✅ Cosmetics
+✅ Electronics
+✅ Jewellery
+✅ Food businesses
+✅ Small e-commerce brands
+
+Headline:
+
+> **Built for sellers who sell through conversations.**
+
+---
+
+### 9. Pricing
+
+**এখন pricing দেখাব না।**
+
+তার বদলে:
+
+> 🚀 **Founding Users — Limited Early Access**
+
+> Join our early access program and get special founding-user pricing.
+
+Button:
+
+**Join Early Access**
+
+কারণ আমরা এখনও price validate করিনি।
+
+---
+
+### 10. FAQ
+
+প্রথমে 5টা:
+
+**Is this a chatbot?**
+
+> Not exactly. Our focus is understanding your conversations and helping you identify sales opportunities.
+
+**Does it work with Bangla/Banglish?**
+
+> That's one of the core use cases we're testing.
+
+**Do I need technical knowledge?**
+
+> No.
+
+**Can I try it for free?**
+
+> Early users can request a free analysis.
+
+**When will it launch?**
+
+> We're currently onboarding early users.
+
+---
+
+### 11. Final CTA
+
+শেষে আবার:
+
+> **Your next customer might already be sitting in your inbox.**
+
+> Let AI find them.
+
+**[Get Free AI Analysis]**
+
+---
+
+# 🎨 Design Direction
+
+তোমার জন্য আমি **premium SaaS style** recommend করব।
+
+### Colors
+
+* Deep navy / dark background
+* White
+* Subtle blue/purple accent
+* Green for positive sales indicators
+* Red/orange only for lost opportunities
+
+### Style
+
+**Linear + Stripe + modern AI SaaS**
+
+অতিরিক্ত animation নয়।
+
+Clean, premium, trustworthy।
+
+---
+
+# 🧱 Page Structure
+
+শেষ পর্যন্ত পুরো page হবে:
+
+```text
+NAVBAR
+   ↓
+HERO
+   ↓
+PROBLEM
+   ↓
+AI DEMO
+   ↓
+HOW IT WORKS
+   ↓
+FEATURES
+   ↓
+DASHBOARD
+   ↓
+FREE AI ANALYSIS
+   ↓
+WHO IT'S FOR
+   ↓
+EARLY ACCESS
+   ↓
+FAQ
+   ↓
+FINAL CTA
+   ↓
+FOOTER
+```
+
+## ⭐ কিন্তু আমরা সব একসাথে বানাব না
+
+**Version 1-এর priority:**
+
+1. Hero
+2. AI Demo
+3. Dashboard mockup
+4. Free Analysis form
+5. How it works
+6. Features
+7. Final CTA
+
+এই 7টা দিয়েই launch করা যাবে।
+
+**Promotion-এর আগে landing page-এর সবচেয়ে জরুরি জিনিস হলো CTA + lead collection working থাকা।** Visitor যেন Reel দেখে এসে শুধু page ঘুরে চলে না যায়—তার contact রেখে যায়।
+
+পরের কাজ হিসেবে আমরা **এই landing page-এর actual UI/content/specification final করে তারপর code লিখব**।
