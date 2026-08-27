@@ -57,10 +57,14 @@ html {
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  /* KEY FIX: overflow-x hidden on html stops horizontal scroll entirely */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   overflow-x: hidden;
+  max-width: 100%;
   min-height: 100vh;
   background: var(--bg-main);
   background-image:
@@ -69,7 +73,26 @@ body {
   background-size: 32px 32px, 64px 64px;
 }
 
-img, svg { max-width: 100%; }
+img, svg { max-width: 100%; display: block; }
+
+/* =====================================================================
+   GLOBAL OVERFLOW SAFETY NET
+   Prevents ANY element from ever exceeding viewport width.
+   This is the definitive fix for the blank right-side on mobile.
+   ===================================================================== */
+*, *::before, *::after {
+  max-width: 100%;
+}
+/* Exception: elements that NEED to be wider internally but must be clipped by parent */
+.reasons-table,
+.demo-tabs,
+.hero-preview-grid,
+.demo-layout-grid,
+.dash-metrics-grid,
+.dash-subgrid {
+  max-width: unset; /* These have their own overflow-x: auto wrappers */
+}
+
 
 /* Ambient glows */
 .ambient-glow {
@@ -127,8 +150,10 @@ img, svg { max-width: 100%; }
 .container {
   width: 100%; max-width: 1180px;
   margin: 0 auto;
-  padding: 0 clamp(14px, 4vw, 24px);
+  /* Use safe padding — never let content touch edges */
+  padding: 0 clamp(16px, 5vw, 28px);
   position: relative; z-index: 1;
+  box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -872,8 +897,14 @@ img, svg { max-width: 100%; }
   background: rgba(244,63,94,0.15); color: #fda4af;
   font-size: 0.66rem; font-weight: 700; padding: 2px 6px; border-radius: var(--radius-full);
 }
-.reasons-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.reasons-table { width: 100%; min-width: 300px; border-collapse: collapse; font-size: 0.8rem; }
+.reasons-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Contain the table inside its parent — never overflow the card */
+  max-width: 100%;
+  border-radius: 4px;
+}
+.reasons-table { width: 100%; min-width: 280px; border-collapse: collapse; font-size: 0.78rem; }
 .reasons-table th {
   text-align: left; padding: 8px 6px; color: var(--text-subtle);
   font-weight: 600; border-bottom: 1px solid var(--border-subtle);
