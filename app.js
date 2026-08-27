@@ -92,7 +92,51 @@ document.addEventListener('DOMContentLoaded', () => {
   initDemoPlayer();
   initCalculator();
   initFaqAccordion();
+  initScrollAnimations();
 });
+
+// --- SCROLL REVEAL MICRO-ANIMATIONS ---
+function initScrollAnimations() {
+  const animatedSelectors = [
+    '.problem-card',
+    '.step-card',
+    '.feature-box',
+    '.audience-card',
+    '.dash-metric-card',
+    '.dash-panel',
+    '.trust-mission-card',
+    '.calculator-box',
+    '.early-access-card',
+    '.form-inner',
+    '.faq-item'
+  ];
+
+  const elements = document.querySelectorAll(animatedSelectors.join(', '));
+  
+  elements.forEach((el, index) => {
+    el.classList.add('reveal-item');
+    el.style.transitionDelay = `${(index % 4) * 0.08}s`;
+  });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    elements.forEach(el => observer.observe(el));
+  } else {
+    // Fallback if IntersectionObserver not supported
+    elements.forEach(el => el.classList.add('revealed'));
+  }
+}
 
 // --- 3. NAVBAR & SMOOTH SCROLL ---
 function initNavbar() {
