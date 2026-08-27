@@ -54,3 +54,5 @@ python -m http.server 3000
 npx serve .
 ```
 Then open `http://localhost:3000` in your browser.
+
+<!-- Verified by miyad-islam -->
