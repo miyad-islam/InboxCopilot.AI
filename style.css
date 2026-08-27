@@ -2021,11 +2021,31 @@ body {
   background: linear-gradient(135deg, rgba(30, 27, 75, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%);
   border: 1px solid var(--border-glow);
   border-radius: var(--radius-xl);
-  padding: 50px;
+  padding: 60px 40px;
   text-align: center;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-glow);
+}
+
+.ea-glow {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent 70%);
+  pointer-events: none;
+}
+
+.ea-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .ea-badge {
@@ -2035,7 +2055,7 @@ body {
   color: #c7d2fe;
   font-size: 0.85rem;
   font-weight: 700;
-  padding: 4px 16px;
+  padding: 6px 18px;
   border-radius: var(--radius-full);
   margin-bottom: 20px;
 }
@@ -2053,39 +2073,38 @@ body {
   font-size: 1.05rem;
   color: var(--text-muted);
   max-width: 700px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 28px auto;
   line-height: 1.6;
 }
 
-.ea-slots-bar {
-  max-width: 480px;
-  margin: 0 auto 30px auto;
+.ea-status-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #a7f3d0;
+  font-size: 0.92rem;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  margin-bottom: 28px;
 }
 
-.slots-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-}
-
-.slots-count strong {
-  color: var(--gold);
-}
-
-.slots-track {
-  width: 100%;
+.ea-status-dot {
+  width: 8px;
   height: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
+  border-radius: 50%;
+  background: var(--emerald);
+  box-shadow: 0 0 8px var(--emerald);
+  animation: pulseAnim 2s infinite;
+  flex-shrink: 0;
 }
 
-.slots-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #6366f1, #fbbf24);
-  border-radius: 4px;
+.ea-btn-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /* ==========================================================================
